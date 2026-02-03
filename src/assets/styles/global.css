@@ -1,0 +1,91 @@
+* {
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: black;
+    font-family: var(--font-family);
+}
+
+html {
+    font-size: 62.5%;
+}
+
+:root {
+    /* Colors */
+    --color-neutral-black: #171717;
+    --color-neutral-white: #FFFFFF;
+    --color-neutral-white-smoke: #F2F4F8;
+    --color-neutral-light-gray: #D9D9D9;
+
+    --color-yellow-gold: #FFC601;
+    --color-yellow-gold-dark: #FFC601;
+    --color-yellow-dark-orange:  #F58A1F;
+    --color-yellow-light-salmon: #FFB280;
+    --color-yellow-light-salmon-dark: #F99A59;
+
+    --color-green-teal: #027580;
+    --color-green-light-sea: #129080;
+    --color-green-forest: #12A101;
+    --color-green-forest-dark: #127001;
+
+    --color-blue-deep-sky-clean: #12CFFF;
+    --color-blue-deep-sky: #00A8FD;
+    --color-blue-deep-sky-dark: #0075B0;
+    --color-blue-deep-sky-dark-ultra: #003854;
+
+    /* Fonts - Satoshi */
+    --font-family: 'Roboto', sans-serif;
+
+    --font-headline-1-size: clamp(6.0rem, 2vw + 1rem, 3.2rem);
+    --font-headline-1-weight: 700;
+
+    --font-headline-2-size: clamp(2rem, 1.5vw + 1rem, 2.4rem);
+    --font-headline-2-weight: 700;
+
+    --font-headline-3-size: clamp(1.8rem, 1vw + 1rem, 2rem);
+    --font-headline-3-weight: 700;
+
+    --font-subtitle-size: clamp(1.2rem, 0.7vw + 0.6rem, 1.4rem);
+    --font-subtitle-weight: 500;
+
+    --font-body-size: clamp(1.4rem, 0.8vw + 0.8rem, 1.6rem);
+    --font-body-weight: 400;
+
+    --font-button-size: clamp(1.2rem, 0.8vw + 0.8rem, 1.4rem);
+    --font-button-weight: 600;
+
+    --font-caption-size: clamp(1rem, 0.5vw + 0.5rem, 1.2rem);
+    --font-caption-weight: 400;
+
+    /* Effects */
+    --effect-box-shadow: 0px 3px 10px rgba(40, 40, 40, 0.25);
+    --color-disabled-button: #c0c0c0;
+
+}
+
+h1 {
+    color: var(--color-neutral-black);
+    font-size: var(--font-headline-1-size);
+    font-weight: var(--font-headline-1-weight);
+}
+
+h2 {
+    color: var(--color-neutral-black);
+    font-size: var(--font-headline-2-size);
+    font-weight: var(--font-headline-2-weight);
+}
+
+h3 {
+    color: var(--color-neutral-black);
+    font-size: var(--font-headline-3-size);
+    font-weight: var(--font-headline-3-weight);
+}
+
+p {
+    color: var(--color-neutral-black);
+    font-size: var(--font-body-size);
+    font-weight: var(--font-body-weight);
+}
