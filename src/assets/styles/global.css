@@ -37,7 +37,7 @@ html {
     --color-blue-deep-sky-dark-ultra: #003854;
 
     /* Fonts - Satoshi */
-    --font-family: 'Roboto', sans-serif;
+    --font-family: 'Inter', sans-serif;
 
     --font-headline-1-size: clamp(3.0rem, 2vw + 1rem, 3.2rem);
     --font-headline-1-weight: 700;
