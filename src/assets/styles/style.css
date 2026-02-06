@@ -246,6 +246,7 @@ main {
 
                     border-radius: 10px;
                     box-shadow: 2px 1px 6px rgba(163, 163, 163, 0.25);
+                    border: solid 0.75 #F2F2F2;
 
                     .title-box {
                         color: #ACACAC;
