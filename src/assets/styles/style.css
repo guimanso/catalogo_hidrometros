@@ -264,6 +264,87 @@ main {
 
         }
 
+        .leitura-hidrometro {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            
+
+            .title{
+                display: flex;
+                align-items: center;
+                gap: 10px;
+
+                padding-left: 40px;
+
+                p {
+                    font-weight: var(--font-subtitle-weight);
+                    color: var(--color-blue-deep-sky-dark-ultra);
+                }
+            } 
+            
+            .section-display-hidrometro {
+                box-shadow: 2px 1px 6px rgba(163, 163, 163, 0.25);
+                border: solid 0.75 #F2F2F2;
+
+                padding: 40px 0px 16px 0px;
+
+                .container-display-hidrometro {
+                    display: flex;
+                    justify-content: space-between;
+                    padding: 0px 30px;
+
+    
+                    .control {
+                        background: none;
+                        border: none;
+                        cursor: pointer;
+                    }
+           
+                    .gallery-wrapper-hidrometro-display {
+                        overflow-x: hidden;
+                        scroll-snap-type: x mandatory;
+                        display: flex;
+                        justify-content: center;
+                    }
+
+                    .gallery-wrapper-hidrometro-display::-webkit-scrollbar {
+                        display: none;
+                    }
+
+                    .gallery-hidrometro-display {
+                        display: flex;
+                        flex-flow: row nowrap;
+                        gap: 100px;
+                        padding: 0px 300px;
+                    }
+    
+                }
+
+                .seletor-img {
+                    display: flex;
+                    justify-content: center;
+                    margin-top: 26px;
+                    gap: 8px;
+
+                    .esfera {
+                        background-color: rgb(219, 219, 219);
+                        width: 14px;
+                        height: 14px;
+                        border-radius: 100%;
+                        cursor: pointer;
+
+                        transition: .3s;
+                    }
+
+                    .esfera.active {
+                        background-color: var(--color-blue-deep-sky);
+                        transform: scale(1.12);
+                    }
+                }
+            }
+        }
+
     }
 
 }
