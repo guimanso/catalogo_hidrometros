@@ -2,6 +2,22 @@ const controls = document.querySelectorAll('.control');
 const items = document.querySelectorAll('.items');
 const dots = document.querySelectorAll('.esfera');
 
+// Abrir e Fechar Modal do Hidrômetro
+const openModalButton = document.querySelector(".card"); 
+const closeModalButton = document.querySelector(".btn-close-modal");
+const modal = document.querySelector("#modal");
+const fade = document.querySelector("#fade");
+
+const toggleModal = () => {
+    modal.classList.toggle("hide");
+    fade.classList.toggle("hide");
+}
+
+[openModalButton, closeModalButton, fade].forEach((el) => {
+    el.addEventListener("click", () => toggleModal())
+})
+
+// Carrossel do Display Hidrometros
 let currentItem = 0;
 const maxItems = items.length;
 
