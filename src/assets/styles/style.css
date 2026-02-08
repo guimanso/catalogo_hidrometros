@@ -114,12 +114,23 @@ main {
             .btn-arrow {
                 cursor: pointer;
                 background: none;
+
+                img {
+                    width: 70%;
+                }
             }
         }
     }
 }
 
-.fade {
+#fade,
+#modal {
+    transition: 0.5s;
+    opacity: 1;
+    pointer-events: all;
+}
+
+#fade {
     position: fixed;
     top: 0;
     left: 0;
@@ -129,7 +140,7 @@ main {
     z-index: 5;
 }
 
-.modal {
+#modal {
     position: fixed;
     top: 50%;
     left: 50%;
@@ -192,7 +203,6 @@ main {
     .modal-main {
         flex: 1;
         overflow-y: auto;
-        text-align: center;
         width: 100%;
 
         scrollbar-width: none;
@@ -204,6 +214,7 @@ main {
             overflow: hidden;
             position: relative;
             z-index: 7;
+            text-align: center;
 
             img {
                 width: 80%;
@@ -264,7 +275,7 @@ main {
 
         }
 
-        .leitura-hidrometro {
+        .display-hidrometro {
             display: flex;
             flex-direction: column;
             gap: 30px;
@@ -345,6 +356,79 @@ main {
             }
         }
 
+        .lista-tutorial-hidrometro {
+            display: flex;
+            justify-content: center;
+            margin: 40px;
+
+            border-radius: 10px;
+            box-shadow: 2px 1px 6px rgba(163, 163, 163, 0.25);
+            border: solid 0.75 #F2F2F2;
+            
+            .tutorial {
+                padding: 20px;
+                list-style: none;
+                counter-reset: item;
+            }
+
+            .tutorial li {
+                margin-top: 20px;
+                margin-bottom: 20px;
+
+                display: flex;
+                align-items: center;
+                gap: 20px;
+                counter-increment: item;
+
+                p {
+                    font-size: var(--font-body-size);
+                    font-weight: var(--font-subtitle-weight);
+                    color: var(--color-blue-deep-sky-dark-ultra);
+                }
+            }
+
+            .tutorial li::before {
+                text-align: center;
+                content: counter(item) " ";
+                color: var(--color-neutral-white);
+                font-size: var(--font-subtitle-size);
+                font-weight: var(--font-subtitle-weight);
+                background-color: var(--color-blue-deep-sky);
+                padding: 8px 12px;
+                border-radius: 100%;
+                
+            }
+
+        }
+
+        footer {
+            display: flex;
+            justify-content: center;
+            margin: 0px 30px 20px 30px;
+
+            .btn-pdf-hidrometro{
+                width: 100%;
+                padding: 20px;
+                border-radius: 10px;
+                cursor: pointer;
+                font-size: var(--font-subtitle-size);
+                font-weight: var(--font-subtitle-weight);
+                color: var(--color-neutral-white);
+                background-color: var(--color-blue-deep-sky);
+            }
+        }
+
     }
 
 }
+
+#fade.hide,
+#modal.hide {
+    opacity: 0;
+    pointer-events: none;
+}
+
+#modal.hide {
+    top: 0;
+}
+
