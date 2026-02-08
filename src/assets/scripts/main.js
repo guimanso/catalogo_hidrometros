@@ -3,7 +3,7 @@ const items = document.querySelectorAll('.items');
 const dots = document.querySelectorAll('.esfera');
 
 // Abrir e Fechar Modal do Hidrômetro
-const openModalButton = document.querySelector(".card"); 
+const openModalButton = document.querySelector(".btn-arrow"); 
 const closeModalButton = document.querySelector(".btn-close-modal");
 const modal = document.querySelector("#modal");
 const fade = document.querySelector("#fade");
