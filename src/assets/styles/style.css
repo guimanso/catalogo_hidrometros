@@ -105,9 +105,11 @@ main {
             align-items: center;
             justify-content: space-between;
             box-shadow: 2px 1px 6px rgba(163, 163, 163, 0.25);
+            border: solid 0.75px #F2F2F2;
             padding: 26px 22px;
             gap: 50px;
             border-radius: 10px;
+            transition: 0.3s;
             
             .description-card {
                 display: flex;
@@ -115,8 +117,15 @@ main {
                 gap: 30px;
 
                 .img-card {
-                    background-color: #ebebeb;
+                    width: 20%;
+                    max-height: 250px;
+                    background-color: #ffffff;
                     border-radius: 10px;
+                    border: solid 0.75px #f5f5f5;
+
+                    img {
+                        width: 100%;
+                    }
                 }
 
                 .text-datail-card {
@@ -144,6 +153,10 @@ main {
                     width: 70%;
                 }
             }
+        }
+
+        .card:hover{
+            box-shadow: 3px 1.5px 8px rgba(163, 163, 163, 0.637);
         }
     }
 }
@@ -339,9 +352,7 @@ main {
            
                     .gallery-wrapper-hidrometro-display {
                         overflow-x: hidden;
-                        scroll-snap-type: x mandatory;
-                        display: flex;
-                        justify-content: center;
+                        width: 80%;
                     }
 
                     .gallery-wrapper-hidrometro-display::-webkit-scrollbar {
@@ -350,9 +361,15 @@ main {
 
                     .gallery-hidrometro-display {
                         display: flex;
-                        flex-flow: row nowrap;
-                        gap: 100px;
-                        padding: 0px 300px;
+                        padding: 0;
+
+                        .items {
+                            flex: 0 0 100%;
+
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                        }
                     }
     
                 }
@@ -457,3 +474,6 @@ main {
     top: 0;
 }
 
+.hidden {
+    display: none;
+}
