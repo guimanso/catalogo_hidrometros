@@ -1,0 +1,266 @@
+[
+  {
+    "id": 1,
+    "fabricante": "DIEHL",
+    "modelo": "HYDRUS 2.0",
+    "tecnologia": "ULTRASSÔNICO",
+    "classe_range": "500",
+    "temperatura": 50,
+    "diametro": 20,
+    "capacidade": 4,
+    "tutorial_descricao": [
+      "A leitura é feita diretamente no display LCD do hidrômetro",
+      "O valor exibido é a totalização do consumo",
+      "À esquerda do ponto decimal estão os metros cúbicos (m³)",
+      "À direita do ponto decimal estão os litros (L)",
+      "Confirme se a tela está identificada com “m³” antes de anotar a leitura",
+      "Deslize o dedo no sensor abaixo do display para alternar as telas",
+      "Outras telas podem mostrar vazão instantânea, totalização ou versão do software",
+      "É possível observar o fluxo de água através do sinal de positivo no canto superior esquerdo da tela"
+    ],
+    "img_hidrometro": [
+      "img_diehl_hydrus_2.0_panoramica",
+      "img_diehl_hydrus_2.0_perfil",
+      "img_diehl_hydrus_2.0_cima"
+    ],
+    "img_display": [
+      "display_diehl_2.0_totalizador",
+      "display_diehl_2.0_vazao",
+      "display_diehl_2.0_sem_fluxo"
+    ]
+  },
+  {
+    "id": 2,
+    "fabricante": "ELETRA",
+    "modelo": "ZLW20-4",
+    "tecnologia": "ULTRASSÔNICO",
+    "classe_range": "500",
+    "temperatura": 50,
+    "diametro": 20,
+    "capacidade": 4,
+    "tutorial_descricao": [
+      "A leitura é feita diretamente no display LCD",
+      "A parte superior mostra a totalização do consumo em m³",
+      "A parte inferior exibe a vazão instantânea em m³/h",
+      "Para a leitura mensal utilize apenas o valor totalizado da parte superior",
+      "À esquerda do ponto decimal estão os metros cúbicos e à direita os litros",
+      "1 m³ equivale a 1.000 litros e 1 m³/h equivale a 1.000 l/h",
+      "A seta no visor indica a vazão e o sentido do fluxo da água"
+    ],
+    "img_hidrometro": [
+      "img_eletra_zlw20_4_panoramica",
+      "img_eletra_zlw20_4_perfil",
+      "img_eletra_zlw20_4_cima"
+    ],
+    "img_display": [
+      "display_eletra_zlw20_4_totalizador",
+      "display_eletra_zlw20_4_sem_fluxo",
+      "display_eletra_zlw20_4_vazao",
+      "display_eletra_zlw20_4_com_fluxo"
+    ]
+  },
+  {
+    "id": 3,
+    "fabricante": "ARAD",
+    "modelo": "SONATA",
+    "tecnologia": "ULTRASSÔNICO",
+    "classe_range": "C",
+    "temperatura": 50,
+    "diametro": 20,
+    "capacidade": 3,
+    "tutorial_descricao": [
+      "A leitura é feita diretamente no display LCD",
+      "A parte superior mostra a totalização do consumo em m³",
+      "A parte inferior exibe a vazão instantânea em m³/h",
+      "Para a leitura mensal utilize apenas o valor totalizado da parte superior",
+      "À esquerda do ponto decimal estão os metros cúbicos e à direita os litros",
+      "Verifique se a unidade exibida é m³ antes de registrar a leitura",
+      "A seta no visor indica o fluxo e a vazão da água"
+    ],
+    "img_hidrometro": [
+      "img_arad_sonata_panoramica",
+      "img_arad_sonata_perfil",
+      "img_arad_sonata_cima"
+    ],
+    "img_display": [
+      "display_arad_sonata_totalizador",
+      "display_arad_sonata_vazao",
+      "display_arad_sonata_com_fluxo",
+      "display_arad_sonata_sem_fluxo"
+    ]
+  },
+  {
+    "id": 4,
+    "fabricante": "FAE",
+    "modelo": "FLUXUS",
+    "tecnologia": "ULTRASSÔNICO",
+    "classe_range": "C",
+    "temperatura": 50,
+    "diametro": 20,
+    "capacidade": 5,
+    "tutorial_descricao": [
+      "A leitura é feita diretamente no display LCD",
+      "O visor apresenta a totalização do consumo em metros cúbicos (m³)",
+      "Para a leitura mensal utilize o valor totalizado exibido no visor",
+      "Identifique corretamente o ponto decimal antes de registrar",
+      "À esquerda do ponto estão os metros cúbicos",
+      "À direita do ponto estão os litros",
+      "Confirme se a unidade exibida é m³ antes da anotação"
+    ],
+    "img_hidrometro": [
+      "img_fae_fluxus_panoramica",
+      "img_fae_fluxus_perfil",
+      "img_fae_fluxus_cima"
+    ],
+    "img_display": [
+      "display_fae_fluxus_totalizador"
+    ]
+  },
+  {
+    "id": 5,
+    "fabricante": "KAIFA",
+    "modelo": "MA408",
+    "tecnologia": "ULTRASSÔNICO",
+    "classe_range": "400",
+    "temperatura": 50,
+    "diametro": 20,
+    "capacidade": 4,
+    "tutorial_descricao": [
+      "A leitura é feita diretamente no display LCD",
+      "A parte superior mostra a totalização do consumo em m³",
+      "A parte inferior exibe a vazão instantânea em m³/h",
+      "Para a leitura mensal utilize apenas o valor totalizado da parte superior",
+      "À esquerda do ponto decimal estão os metros cúbicos e à direita os litros",
+      "Utilize o botão para alternar entre as telas de vida da bateria, totalização e número de série",
+      "A seta indica o fluxo da água e o sinal positivo indica a totalização do consumo"
+    ],
+    "img_hidrometro": [
+      "img_kaifa_ma408_panoramica",
+      "img_kaifa_ma408_perfil",
+      "img_kaifa_ma408_cima"
+    ],
+    "img_display": [
+      "display_kaifa_ma408_totalizador",
+      "display_kaifa_ma408_vazao",
+      "display_kaifa_ma408_sem_fluxo",
+      "display_kaifa_ma408_com_fluxo"
+    ]
+  },
+  {
+    "id": 6,
+    "fabricante": "SAGA",
+    "modelo": "SAGASSONIC",
+    "tecnologia": "ULTRASSÔNICO",
+    "classe_range": "C",
+    "temperatura": 40,
+    "diametro": 20,
+    "capacidade": 3,
+    "tutorial_descricao": [
+      "A leitura é feita diretamente no display LCD",
+      "O visor apresenta a totalização do consumo em metros cúbicos (m³)",
+      "Para a leitura mensal utilize o valor totalizado exibido no visor",
+      "Identifique corretamente o ponto decimal antes de registrar a leitura",
+      "À esquerda do ponto estão os metros cúbicos",
+      "À direita do ponto estão os litros",
+      "A seta no visor indica o fluxo da água"
+    ],
+    "img_hidrometro": [
+      "img_saga_sagassonic_panoramica",
+      "img_saga_sagassonic_perfil",
+      "img_saga_sagassonic_cima"
+    ],
+    "img_display": [
+      "display_saga_sagassonic_totalizador",
+      "display_saga_sagassonic_vazao",
+      "display_saga_sagassonic_sem_fluxo"
+    ]
+  }, 
+  {
+    "id": 7,
+    "fabricante": "KAIFA",
+    "modelo": "MA408",
+    "tecnologia": "ULTRASSÔNICO",
+    "classe_range": "C",
+    "temperatura": 50,
+    "diametro": 20,
+    "capacidade": 5,
+    "tutorial_descricao": [
+      "A leitura é feita diretamente no display LCD",
+      "A parte superior mostra a totalização do consumo em m³",
+      "A parte inferior exibe a vazão instantânea em m³/h",
+      "Para a leitura mensal utilize apenas o valor totalizado da parte superior",
+      "À esquerda do ponto decimal estão os metros cúbicos e à direita os litros",
+      "Utilize o botão para alternar entre as telas de vida da bateria,totalização e número de série",
+      "A seta indica o fluxo da água e o sinal positivo indica a totalização do consumo"
+    ],
+    "img_hidrometro": [
+      "img_kaifa_astrum_panoramica",
+      "img_kaifa_astrum_perfil",
+      "img_kaifa_astrum_cima"
+    ],
+    "img_display": [
+      "display_kaifa_ma408_totalizador",
+      "display_kaifa_ma408_vazao",
+      "display_kaifa_ma408_sem_fluxo",
+      "display_kaifa_ma408_com_fluxo"
+    ]
+  },
+  {
+    "id": 8,
+    "fabricante": "SAGA",
+    "modelo": "SS 4,0",
+    "tecnologia": "ULTRASSÔNICO",
+    "classe_range": "500",
+    "temperatura": 50,
+    "diametro": 20,
+    "capacidade": 4,
+    "tutorial_descricao": [
+      "A leitura é feita diretamente no display LCD",
+      "A parte superior mostra a totalização do consumo em m³",
+      "A parte inferior exibe a vazão instantânea em m³/h",
+      "Para a leitura mensal utilize apenas o valor totalizado da parte superior",
+      "À esquerda do ponto decimal estão os metros cúbicos e à direita os litros",
+      "A seta no visor indica a vazão e o sentido do fluxo da água"
+    ],
+    "img_hidrometro": [
+      "img_saga_ss4_panoramica",
+      "img_saga_ss4_cima",
+      "img_saga_ss4_perfil"
+    ],
+    "img_display": [
+      "display_saga_ss4_totalizador",
+      "display_saga_ss4_vazao",
+      "display_saga_ss4_sem_fluxo"
+    ]
+  },
+  {
+    "id": 9,
+    "fabricante": "KAIFA",
+    "modelo": "MA408 3.0",
+    "tecnologia": "ULTRASSÔNICO",
+    "classe_range": "500",
+    "temperatura": 50,
+    "diametro": 20,
+    "capacidade": 4,
+    "tutorial_descricao": [
+      "A leitura é feita diretamente no display LCD",
+      "A parte superior mostra a totalização do consumo em m³",
+      "A parte inferior exibe a vazão instantânea em m³/h",
+      "Para a leitura mensal utilize apenas o valor totalizado da parte superior",
+      "À esquerda do ponto decimal estão os metros cúbicos e à direita os litros",
+      "Utilize o botão para alternar entre as telas de vida da bateria,totalização e número de série",
+      "A seta indica o fluxo da água e o sinal positivo indica a totalização do consumo"
+    ],
+    "img_hidrometro": [
+      "img_kaifa_ma408_3.0_panoramica",
+      "img_kaifa_ma408_3.0_cima",
+      "img_kaifa_ma408_3.0_perfil"
+    ],
+    "img_display": [
+      "display_kaifa_ma408_totalizador",
+      "display_kaifa_ma408_vazao",
+      "display_kaifa_ma408_sem_fluxo",
+      "display_kaifa_ma408_com_fluxo"
+    ]
+  }
+]
