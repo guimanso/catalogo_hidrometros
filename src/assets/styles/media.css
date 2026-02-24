@@ -1,0 +1,48 @@
+@media(max-width: 900px) {
+    header {
+        img {
+            max-width: 30%;
+        }
+    }
+
+    main .search-bar{
+        width: 90%;
+
+    }
+
+    main .group-card-hidrometros .card {
+        width: 90%;
+
+        .description-card .text-datail-card {
+            white-space: wrap;
+        }
+    }
+
+}
+
+@media(max-width: 650px) {
+    header {
+       margin-bottom: 60px;
+        img {
+            max-width: 50%;
+        }
+        .title {
+            scale: 0.8;
+            white-space: nowrap;
+        }
+    }
+
+    main .search-bar{
+        width: 90%;
+
+    }
+
+    main .group-card-hidrometros .card {
+        width: 90%;
+
+        .description-card .text-datail-card {
+            white-space: wrap;
+        }
+    }
+
+}
