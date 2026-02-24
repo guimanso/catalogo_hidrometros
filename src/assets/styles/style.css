@@ -100,7 +100,9 @@ main {
         gap: 30px;
 
         .card {
+            
             width: 50%;
+            max-height: 200px;
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -115,16 +117,23 @@ main {
                 display: flex;
                 align-items: center;
                 gap: 30px;
+                
 
                 .img-card {
-                    width: 20%;
-                    max-height: 250px;
+                    max-width: 120px;
+                    min-width: 100px;
+                    aspect-ratio: 1 / 1;
                     background-color: #ffffff;
                     border-radius: 10px;
                     border: solid 0.75px #f5f5f5;
+                    overflow: hidden;
+                    cursor: pointer;
 
                     img {
+                        margin: 2px;
                         width: 100%;
+                        height: 100%;
+                        object-fit: contain;
                     }
                 }
 
@@ -132,10 +141,14 @@ main {
                     display: flex;
                     flex-direction: column;
                     gap: 10px;
+                    white-space: nowrap;
 
+                    cursor: pointer;
+                    
                     h3 {
                         color: var(--color-blue-deep-sky);
                         font-weight: 600;
+                        
                     }
 
                     p {
@@ -146,13 +159,18 @@ main {
             }
 
             .btn-arrow {
+                height: 100%;
+                width: 10%;
                 cursor: pointer;
                 background: none;
 
                 img {
-                    width: 70%;
+                    width: 40%;
+                    height: 100%;
+                    object-fit: contain;
                 }
             }
+
         }
 
         .card:hover{
@@ -362,6 +380,7 @@ main {
                     .gallery-hidrometro-display {
                         display: flex;
                         padding: 0;
+                        touch-action: pan-y;
 
                         .items {
                             flex: 0 0 100%;
