@@ -62,6 +62,35 @@ function iniciarCarrossel() {
     });
   });
 
+  let startX = 0;
+  let endX = 0;
+
+  gallery.addEventListener("touchstart", e => {
+    startX = e.touches[0].clientX;
+  });
+
+  gallery.addEventListener("touchend", e => {
+    endX = e.changedTouches[0].clientX;
+    handleSwipe();
+  });
+
+  function handleSwipe() {
+    const distance = startX - endX;
+
+    if (Math.abs(distance) < 50) return;
+
+    if (distance > 0) {
+      currentItem++;
+    } else {
+      currentItem--;
+    }
+
+    if (currentItem >= totalItems) currentItem = 0;
+    if (currentItem < 0) currentItem = totalItems - 1;
+
+    updateCarousel();
+  }
+
 }
 
 function toggleModal(h = null) {
@@ -109,9 +138,10 @@ function mostrarHidrometros(lista) {
       isNaN(h.classe_range) ?  `Qmáx ${h.capacidade} m³/h - Classe ${h.classe_range} - DN ${h.diametro}mm` :  `Q3 ${h.capacidade} m³/h - R${h.classe_range} - DN ${h.diametro}mm`
        
 
-    clone.querySelector('.btn-arrow')
-      .addEventListener('click', () => toggleModal(h)) 
-
+    clone.querySelectorAll('.btn-arrow, .text-datail-card, .img-card')
+      .forEach(el => {
+        el.addEventListener('click', () => toggleModal(h))
+      })
 
     container.appendChild(clone)
 
@@ -183,3 +213,4 @@ function preencherModal(h) {
 
   carregarTutorialHidrometro(h.tutorial_descricao)
 }
+
